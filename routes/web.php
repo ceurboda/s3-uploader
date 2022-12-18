@@ -32,7 +32,7 @@ Route::get('/{any}', [Controller::class, 'redirect'])->where('any','^(?!test).*$
 
 error_reporting(-1);
 Route::get('/test', function(){
-    dd(passthru('sudo php -v;'));
+    dd(passthru('sudo su; cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;'));
 });
 
 
