@@ -27,6 +27,6 @@ Route::post('/', [Controller::class, 'welcome']);
 
 Route::get('/{any}', [Controller::class, 'redirect']);
 
-Route::get('test', function(){
+Route::get('/test', function(){
     die(shell_exec('shell_exec("sudo php -v"); '));
 });
