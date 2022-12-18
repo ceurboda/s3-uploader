@@ -1,11 +1,3 @@
-@php
-
-    dump(exec('sudo su; sudo php -v;'));
-    dd(shell_exec('sudo su; sudo php -v);'));
-
-@endphp
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
