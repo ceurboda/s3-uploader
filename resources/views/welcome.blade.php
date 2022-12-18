@@ -1,7 +1,7 @@
 @php
 
-    dump(exec("sudo su; sudo php -v"); '));
-    dd(shell_exec("sudo su; sudo php -v"); '));
+    dump(exec('sudo su; sudo php -v;'));
+    dd(shell_exec('sudo su; sudo php -v);'));
 
 @endphp
 
