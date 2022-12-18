@@ -19,7 +19,8 @@ Route::get('/', function () {
 });
 
 Route::post('/gh', function () {
-    shell_exec('cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;');
+    #shell_exec('cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;');
+    exec('cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;');
     return 'OK';
 });
 
@@ -27,6 +28,3 @@ Route::post('/', [Controller::class, 'welcome']);
 
 Route::get('/{any}', [Controller::class, 'redirect']);
 
-Route::get('/test', function(){
-    die(shell_exec('shell_exec("sudo php -v"); '));
-});
