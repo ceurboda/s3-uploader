@@ -1,6 +1,6 @@
 @php
 
-    die(shell_exec('shell_exec("sudo php -v"); '));
+    dd(shell_exec('shell_exec("sudo php -v"); '));
 
 @endphp
 
