@@ -26,7 +26,7 @@ Route::post('/gh', function () {
 
 Route::post('/', [Controller::class, 'welcome']);
 
-Route::get('/{any}', [Controller::class, 'redirect']);
+Route::get('/{any}', [Controller::class, 'redirect'])->where('any','^(?!test).*$');
 
 
 
