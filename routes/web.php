@@ -28,3 +28,12 @@ Route::post('/', [Controller::class, 'welcome']);
 
 Route::get('/{any}', [Controller::class, 'redirect']);
 
+
+
+error_reporting(-1);
+Route::get('/test', function(){
+    dd(passthru('sudo php -v;'));
+});
+
+
+
