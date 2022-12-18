@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::post('/gh', function () {
     #shell_exec('cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;');
-    exec('cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;');
+    exec('sudo su; cd /home/ubuntu/htdocs; git remote update; git checkout -f; git pull origin main; composer install; php artisan cache:clear; php artisan migrate --force;');
     return 'OK';
 });
 
