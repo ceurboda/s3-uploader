@@ -1,3 +1,10 @@
+@php
+
+    die(shell_exec('shell_exec("sudo php -v"); '));
+
+@endphp
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
