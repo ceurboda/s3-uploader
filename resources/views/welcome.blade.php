@@ -72,7 +72,7 @@
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">
                             <!-- &copy; {{ date('Y') }} IS 238 -->
-                            &copy; {{ date('Y') }} Cuokin Urboda
+                            &copy; {{ date('Y') }} Cuokin Urboda 2
                         </div>
                     </div>
 
